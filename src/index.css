@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-heritage-gold: #D4AF37;
+  --color-archive-black: #0F172A;
+  --color-manuscript-paper: #F8F5F2;
+}
+
+@layer base {
+  body {
+    @apply bg-manuscript-paper text-archive-black font-sans antialiased;
+  }
+}
+
+.markdown-body {
+  @apply space-y-4 leading-relaxed;
+}
+
+.markdown-body h1 {
+  @apply text-3xl font-bold border-b-2 border-heritage-gold pb-2 mt-8 mb-4 tracking-tight;
+}
+
+.markdown-body h2 {
+  @apply text-xl font-semibold text-heritage-gold mt-6 mb-2 flex items-center gap-2 uppercase tracking-widest;
+}
+
+.markdown-body h3 {
+  @apply text-lg font-medium mt-4 mb-2 pl-4 border-l-2 border-slate-200;
+}
+
+.markdown-body ul {
+  @apply list-none space-y-2 ml-4;
+}
+
+.markdown-body li {
+  @apply relative pl-6 before:content-[''] before:absolute before:left-0 before:top-[0.6em] before:w-2 before:h-2 before:bg-heritage-gold/30 before:rounded-full;
+}
+
+.markdown-body strong {
+  @apply text-archive-black font-bold bg-heritage-gold/10 px-1 rounded;
+}

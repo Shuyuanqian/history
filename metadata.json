@@ -1,0 +1,6 @@
+{
+  "name": "Chronos Atlas",
+  "description": "An AI-powered historical mind mapping tool that connects the dots of time through the lens of 'Grand Historical View'.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI_POWERED_HISTORY_ENGINE"]
+}
